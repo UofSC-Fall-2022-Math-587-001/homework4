@@ -26,7 +26,7 @@
 
 \begin{document}
 
-\title{Homework 3}
+\title{Homework 4 -- In progress }
 
 \maketitle
 
@@ -35,66 +35,41 @@ I've copied the problem itself below and the question numbers for
 your convenience. 
 
 \begin{enumerate}
-	\item (1.19) Suppose that $g^a \equiv 1 \mod m$ and $g^b \equiv 1 \mod m$. Prove that 
-	\begin{displaymath}
-		g^{\operatorname{gcd}(a,b)} \equiv 1 \mod m
-	\end{displaymath}
-
-	\item (1.27) Consider the congruence 
-	\begin{displaymath}
-		ax \equiv c \mod m
-	\end{displaymath}
+	\item (2.3) Let $g$ be a primitive root for $\mathbb{F}_p$.
 	\begin{enumerate}
-		\item Prove that there is a solution if and only if $\operatorname{gcd}(a,m)$ divides $c$. 
-		\item If there is a solution, prove that there are exactly $\operatorname{gcd}(a,m)$ 
-			distinct solutions. 
-	\end{enumerate}
-	(Hint: Use the extended Euclidean algorithm.)
-
-	\item (1.28) Let $\lbrace p_1,\ldots,p_r \rbrace$ be a set of prime numbers and let 
-	\begin{displaymath}
-		N = p_1 \cdots p_r + 1 
-	\end{displaymath}
-	Prove that $N$ is not divisible by any of the $p_i$. Use this fact to conclude there are infinitely 
-	many prime numbers.
-
-	\item (1.32) For each of the following primes $p$ and numbers $a$, compute $a^{-1} \mod p$ in two 
-		ways: (i) Use the extended Euclidean algorithm. (ii) Use the fast power algorithm and 
-		Fermat's little theorem. 
-	\begin{enumerate}
-		\item $p=47$ and $a=11$
-		\item $p=587$ and $a=345$
-		\item $p=104801$ and $a=78467$
-	\end{enumerate}
-
-	\item (1.36) This exercise begins the study of squares and square roots modulo $p$. 
-	\begin{enumerate}
-		\item Let $p$ be an odd prime number and let $b$ be an integer with $p \not \mid b$. Prove 
-			that either $b$ has two square roots modulo $p$ or else $b$ has no square roots 
-			modulo $p$. In other words, prove that the congruence 
+		\item Suppose that $x=a$ and $x=b$ are both integer solutions to the congruence 
+			$gx = h \mod p$. Prove that $a = b \mod (p-1)$. Explain why this implies 
+			the map (2.1) on page 65 is well-defined. 
+		\item Prove that 
 		\begin{displaymath}
-			X^2 \equiv b \mod p
+			\log_g(h_1 h_2) = \log_g(h_1) + \log_g(h_2) 
 		\end{displaymath}
-		has either two solutions or no solutions in $\mathbb{Z}/p\mathbb{Z}$. (What happens for $p=2$? 
-		What happens if $p \mid b$?)
-	
-		\item For each the following values of $p$ and $b$, find all the square roots of $b$ 
-			modulo $p$. 
-		\begin{enumerate}
-			\item $(p,b) = (7,2)$
-			\item $(p,b) = (11,5)$
-			\item $(p,b) = (11,7)$
-			\item $(p,b) = (37,3)$
-		\end{enumerate}
-		
-		\item How many square roots does $29$ have modulo $39$? Why doesn't this contradict the
-			assertion in (a)? 
-
-		\item Let $p$ be an odd prime and let $g$ be a primitive root modulo $p$. Then any 
-			number $a$ is equal to some power $g$ modulo $p$, say $a \equiv g^k \mod p$. 
-			Prove that $a$ has a square root modulo $p$ if and only if $k$ is even. 
+		for all $h_1,h_2 \in \mathbb{F}_p$.
+		\item Prove that 
+		\begin{displaymath}
+			\log_g(h^n) = n\log_g(h) 
+		\end{displaymath}
+		for all $h \in \mathbb{F}_p$ and $n \in \mathbb{Z}$.
 	\end{enumerate}
-		
+\item (2.4) Compute the following discrete logarithms:
+\begin{enumerate}
+\item $\log_2(13)$ for the prime $23$, i.e., $p=23$, $g=2$, and you must solve the the 
+	congruence $2^x = 13 \mod 23$. 
+\item $\log_{10}(22)$ for the prime $p=47$. 
+\item $\log_627(608)$ for the prime $p=941$. (Hint: Look in the second column of Table 2.1 on page 66.) 
+\end{enumerate}
+% \item (2.5) Let $p$ be an odd prime and let $g$ be a primitive root modulo $p$. Prove that $a$ has a 
+% 	square root modulo $p$ if and only if its discrete logarithm $\log_g(a)$ modulo $p−1$ is even.
+% \item (2.16) Verify the following assertions from Exmaple 2.16. 
+% 	\begin{enumerate}
+% 		\item $x^2 + \sqrt{x} = \mathcal O(x^2)$
+% 		\item $5+6x^2-37x^5 = \mathcal O(x^5)$
+% 		\item $k^{300} = \mathcal O(2^k)$ 
+% 		\item $(\ln k)^{375} = \mathcal O^(k^{0.001})$
+% 		\item $k^2 2^k = \mathcal O(e^{2k})$
+% 		\item $N^{10} 2^N = \mathcal O(e^N)$
+% 	\end{enumerate}
+% 		
 \end{enumerate}
 
 \end{document}
