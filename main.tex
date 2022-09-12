@@ -26,7 +26,7 @@
 
 \begin{document}
 
-\title{Homework 4 -- In progress }
+\title{Homework 4}
 
 \maketitle
 
@@ -60,16 +60,47 @@ your convenience.
 \end{enumerate}
 % \item (2.5) Let $p$ be an odd prime and let $g$ be a primitive root modulo $p$. Prove that $a$ has a 
 % 	square root modulo $p$ if and only if its discrete logarithm $\log_g(a)$ modulo $p−1$ is even.
-% \item (2.16) Verify the following assertions from Exmaple 2.16. 
-% 	\begin{enumerate}
-% 		\item $x^2 + \sqrt{x} = \mathcal O(x^2)$
-% 		\item $5+6x^2-37x^5 = \mathcal O(x^5)$
-% 		\item $k^{300} = \mathcal O(2^k)$ 
-% 		\item $(\ln k)^{375} = \mathcal O^(k^{0.001})$
-% 		\item $k^2 2^k = \mathcal O(e^{2k})$
-% 		\item $N^{10} 2^N = \mathcal O(e^N)$
-% 	\end{enumerate}
-% 		
+\item (2.16) Verify the following assertions from Exmaple 2.16. 
+	\begin{enumerate}
+		\item $x^2 + \sqrt{x} = \mathcal O(x^2)$
+		\item $5+6x^2-37x^5 = \mathcal O(x^5)$
+		\item $k^{300} = \mathcal O(2^k)$ 
+		\item $(\ln k)^{375} = \mathcal O^(k^{0.001})$
+		\item $k^2 2^k = \mathcal O(e^{2k})$
+		\item $N^{10} 2^N = \mathcal O(e^N)$
+	\end{enumerate}
+\item (1.44) Consider the Hill cipher defined by (1.11) 
+	\begin{displaymath}
+		e_k(m) = k_1 \cdot m + k_2 \mod p \ \text{and} \ d_k(m) = k_1^{-1} \cdot (c - k_2) \mod p
+	\end{displaymath}
+	where $m$, $c$, and $k_2$ are column vectors of dimension $n$, and $k_1$ is an $n \times n$-matrix. 
+	\begin{enumerate}
+		\item We use the Hill cipher with $p=7$ and the key $k_1 = \begin{pmatrix} 1 & 3 \\ 2 & 2 
+		\end{pmatrix}$ and $k_2 = \begin{pmatrix} 5 \\ 4 \end{pmatrix}$. 
+		\begin{enumerate}
+			\item Encrypt the message $m_1 = \begin{pmatrix} 2 \\ 1 \end{pmatrix}$. 
+			\item What is the matrix $k_1^{-1}$ used for decryption?
+			\item Decrypt the message $c = \begin{pmatrix} 3 \\ 5 \end{pmatrix}$.
+		\end{enumerate}
+		\item Explain why the Hill cipher is vulnerable to a known plaintext attack. 
+		\item The following plaintext/ciphertext pairs were generated using a Hill cipher with 
+			the prime $p=11$. Find the keys $k_1$ and $k_2$. 
+		\begin{displaymath}
+			m_1 = \begin{pmatrix} 5 \\ 4 \end{pmatrix}, \ c_1 = \begin{pmatrix} 1 \\ 8 \end{pmatrix}, 
+			\ m_2 = \begin{pmatrix} 8 \\ 10 \end{pmatrix}, \ c_2 = \begin{pmatrix} 8 \\ 5 
+			\end{pmatrix}, \ m_3 = \begin{pmatrix} 7 \\ 1 \end{pmatrix}, c_3 = 
+			\begin{pmatrix} 8 \\ 7 \end{pmatrix} 
+		\end{displaymath}
+		\item Explain how any simple substitution cipher that involves a permutation of the alphabet 
+		can be thought of as a special case of a Hill cipher.
+	\end{enumerate}
+\item (1.48) Explain why the cipher 
+	\begin{displaymath}
+		e_k(m) = k \oplus m \ \text{and} \ d_k(c) = k \oplus c 
+	\end{displaymath}
+	defined by XOR of bit strings is not secure against a known plaintext attack. Demonstrate your attack 
+	by finding the private key used to encrypt the 16-bit 
+	ciphertext $c = 1001010001010111$ if you know the corresponding plaintext is $m = 0010010000101100$.
 \end{enumerate}
 
 \end{document}

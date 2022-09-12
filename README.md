@@ -18,6 +18,4 @@ of the questions...)
 
 ### Implementation part 
 
-This week you will need to fill in the functions in `hw3.go` according to the comments. 
-While the pseudo-code for `fastPower` is fairly explicit, both `primalityTest` and 
-`primRootModN` are specified in terms of their desired behavior. 
+
