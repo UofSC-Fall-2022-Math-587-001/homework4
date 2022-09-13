@@ -1,4 +1,4 @@
-## Homework 3: Due 2022.09.12 
+## Homework 4: Due 2022.09.19 
 
 This week we have a written part and an implementation part. 
 
@@ -13,9 +13,6 @@ graded on correctness and
 
 Note: when you submit, your filename must be `solutions.pdf` and it must be a pdf. 
 
-(Hint: an adapted solution to the implementation could help you answer some 
-of the questions...)
-
 ### Implementation part 
 
-
+Make `hw4.go` pass the tests. 
