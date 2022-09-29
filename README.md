@@ -1,4 +1,4 @@
-## Homework 4: Due 2022.09.19 
+## Homework 4
 
 This week we have a written part and an implementation part. 
 
